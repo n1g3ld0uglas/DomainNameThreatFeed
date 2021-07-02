@@ -69,3 +69,20 @@ EOF
 ```
 kubectl apply -f domain-feed-policy.yaml
 ```
+
+Strangely-formatted threat feed of domain names and IP addresses:
+
+```
+apiVersion: projectcalico.org/v3
+kind: GlobalThreatFeed
+metadata:
+  name: russian-tracker
+spec:
+  content: IPSet
+  pull:
+    http:
+      url: https://urlhaus.abuse.ch/feeds/country/RU/
+  globalNetworkSet:
+    labels:
+      threat-feed: ru
+```
