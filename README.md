@@ -8,13 +8,13 @@ apiVersion: projectcalico.org/v3
 kind: GlobalThreatFeed
 metadata:
   name: internet-storm-center
+  labels:
+    threat-feed: suspiciousdomains
 spec:
   content: DomainNameSet
   pull:
     http:
       url: https://isc.sans.edu/block.txt
-    labels:
-      threat-feed: suspiciousdomains
 EOF      
 ```
 
