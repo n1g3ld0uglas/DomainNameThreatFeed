@@ -13,7 +13,6 @@ spec:
   pull:
     http:
       url: https://isc.sans.edu/block.txt
-  globalNetworkSet:
     labels:
       threat-feed: suspiciousdomains
 EOF      
