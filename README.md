@@ -3,7 +3,7 @@
 
 Pulling a DNS-based threat feed into Calico Enterprise: 
 ```
-cat << EOF > isc-suspicious-domains.yaml
+cat << EOF > suspicious-domains.yaml
 apiVersion: projectcalico.org/v3
 kind: GlobalThreatFeed
 metadata:
@@ -18,8 +18,14 @@ spec:
 EOF      
 ```
 
+Download the file
 ```
-kubectl apply -f isc-suspicious-domains.yaml
+wget https://raw.githubusercontent.com/n1g3ld0uglas/DomainNameThreatFeed/main/suspicious-domains.yaml
+```
+
+Apply the file
+```
+kubectl apply -f suspicious-domains.yaml
 ```
 
 Pulling an IP-based threat feed into Calico Enterprise:
