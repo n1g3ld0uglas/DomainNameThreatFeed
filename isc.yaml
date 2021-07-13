@@ -1,0 +1,12 @@
+apiVersion: projectcalico.org/v3
+kind: GlobalThreatFeed
+metadata:
+  name: internet-storm-center
+spec:
+  content: DomainNameSet
+  pull:
+    http:
+      url: https://raw.githubusercontent.com/n1g3ld0uglas/DomainNameThreatFeed/main/test-dns-feed.txt
+  globalNetworkSet:
+    labels:
+      threat-feed: feodo
