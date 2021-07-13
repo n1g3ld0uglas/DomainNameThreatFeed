@@ -18,10 +18,21 @@ spec:
 EOF      
 ```
 
-Download the file
+No Error (can't specify network set)
 ```
 wget https://raw.githubusercontent.com/n1g3ld0uglas/DomainNameThreatFeed/main/suspicious-domains.yaml
 ```
+
+Shows Error (after inserting network set)
+```
+wget https://raw.githubusercontent.com/n1g3ld0uglas/DomainNameThreatFeed/main/isc.yaml
+```
+
+No Error (using an IP-based network set):
+```
+wget https://raw.githubusercontent.com/n1g3ld0uglas/DomainNameThreatFeed/main/feodo-tracker.yaml
+```
+
 
 Apply the file
 ```
