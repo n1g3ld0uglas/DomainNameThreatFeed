@@ -103,3 +103,7 @@ spec:
     labels:
       threat-feed: ru
 ```
+
+### Amazon Route 53 Resolver DNS Firewall
+Has some nice overlap with our DNSlogs and DNS GlobalAlerts and GlobalThreatFeeds:
+https://aws.amazon.com/about-aws/whats-new/2021/03/introducing-amazon-route-53-resolver-dns-firewall/
