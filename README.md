@@ -1,4 +1,4 @@
-# DomainNameThreatFeed
+# Domain Name Threat Feeds
 
 
 Pulling a DNS-based threat feed into Calico Enterprise: 
